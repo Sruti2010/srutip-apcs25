@@ -14,7 +14,7 @@ public class Starter implements Directions{
     // The line below creates a Robot that we will refer to as rob
     // Find out what the numbers and direction do!
     // Put rob in a better location for your initials.
-    Robot rob = new Robot(15,2,South,9);
+    Robot rob = new Robot(15,10,West,50);
 
     // Want a second robot?  No prob.  They are cheap :)
     //Robot dude = new Robot(7,5,West,9);
@@ -23,19 +23,58 @@ public class Starter implements Directions{
 
 
     // starting the letter R
+    World.setDelay(15);
+   
+for (int i=0; i<=4; i++) {
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.turnLeft(); 
+
     rob.putBeeper();
-    rob.putBeeper();
-    rob.putBeeper();
-    rob.putBeeper();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.move();
+    rob.turnLeft();
     rob.move();
     rob.putBeeper();
+    rob.putBeeper();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.turnLeft();
     rob.move();
-    rob.move();
+    rob.turnLeft();
     rob.move();
     rob.putBeeper();
+    rob.putBeeper();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.turnLeft();
     rob.move();
+    rob.turnLeft();
     rob.move();
     rob.putBeeper();
+    rob.putBeeper();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.turnLeft();
+    rob.move();
+    rob.turnLeft();
+    rob.move();
+    rob.putBeeper();
+
+}
+    
+
+
+    
+   
+  
+
+    
+    
+
+
 
     // done with the line, now on the curve
     // rob.turnLeft();
