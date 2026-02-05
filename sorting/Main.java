@@ -22,9 +22,12 @@ public class Main {
 
     public static int[] randomArray(int length)
     {
-        // TODO: make this return an actual random array of the provided length.
-        int[] a = {10, 5, 3, 2};
-        return a;
+       int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+        arr[i] = (int)(Math.random() * 1000);
+        }
+        return arr;
+        
     }
 
 }
