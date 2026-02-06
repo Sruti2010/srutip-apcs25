@@ -1,9 +1,11 @@
 package sorting;
 public class SelectionSort implements Sorter {
     public void sort(int[] input) {
-        System.out.println("Selection Sort!!!");
+        //System.out.println("Selection Sort!!!");
+        int steps2=0;
         int n = input.length;
         for (int i = 0; i < n - 1; i++) {
+            steps2++;
             int minIndex = i;
             for (int j = i + 1; j < n; j++) {
                 if (input[j] < input[minIndex]) {
@@ -14,4 +16,6 @@ public class SelectionSort implements Sorter {
             input[minIndex] = input[i];
             input[i] = temp;
     }
+    System.out.println("selectionsort steps: " + steps2);
+}
 }

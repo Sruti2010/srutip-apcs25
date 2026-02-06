@@ -17,14 +17,14 @@ public class Main {
 
         // Increase the loop count to get better results once it works.
         // TestSuite.run(testInput, 10000);
-        TestSuite.run(testInput, 1);
+        TestSuite.run(testInput, 800);
     }
 
     public static int[] randomArray(int length)
     {
-       int[] arr = new int[size];
-        for (int i = 0; i < size; i++) {
-        arr[i] = (int)(Math.random() * 1000);
+       int[] arr = new int[length];
+        for (int i = 0; i < length; i++) {
+        arr[i] = (int)(Math.random() *9)+ 1;
         }
         return arr;
         
